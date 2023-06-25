@@ -28,7 +28,6 @@ by_table = by_page %>% html_nodes("table") %>% .[1] %>%
 ```
 
 
-__________________________________________________________________________________________________________
 
 For NRW (North-Rhine-Westphalia) the coordinates were in a link, so I took the url of this link to get the coordinates.
 
@@ -44,7 +43,7 @@ koordinaten = nrw_page %>%
   html_nodes("table") %>% .[1] %>%
     html_elements("a.external.text") %>% html_attr("href")
 
-´´´
+```
 
 -----------------------------------------------------------------------------------
 
